@@ -2,8 +2,7 @@
 # coding=utf-8
 from __future__ import absolute_import, division, print_function
 
-import k
+from .. import c
 
-
-def test_k():
-    assert k.do_something() == "|keys||LOL||ssl connect||parse ASN.1|"
+def test_c():
+    assert c.do_something() == "|config|"

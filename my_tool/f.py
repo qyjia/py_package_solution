@@ -3,10 +3,13 @@
 from __future__ import absolute_import, division, print_function
 
 def do_something():
-    return "|config|"
+    return "|parse ASN.1|"
 
-print("C!")
+print("F!")
+
+def main():
+    print("F main!")
+    print(do_something())
 
 if __name__ == "__main__":
-    print("C main!")
-    print(do_something())
+    main()

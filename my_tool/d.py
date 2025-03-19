@@ -7,6 +7,9 @@ def do_something():
 
 print("D!")
 
-if __name__ == "__main__":
+def main():
     print("D main!")
     print(do_something())
+
+if __name__ == "__main__":
+    main()

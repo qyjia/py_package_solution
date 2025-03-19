@@ -2,8 +2,8 @@
 # coding=utf-8
 from __future__ import absolute_import, division, print_function
 
-import s
+from .. import v
 
 
-def test_my_tool():
-    assert s.do_something() == "|tar edit!||installed|"
+def test_v():
+    assert v.do_something() == "|ssl connect||parse ASN.1|"
