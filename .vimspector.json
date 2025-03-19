@@ -1,0 +1,81 @@
+{
+    "configurations": {
+        "Debugger: Launch file": {
+            "adapter": "debugpy",
+            "filetypes": [ "python" ],
+            "configuration": {
+                "name": "Launch File",
+                "request": "launch",
+                "type": "python",
+                "stopOnEntry": true,
+                "python": "python3",
+                "program": "${file}",
+                "env": {
+                    "PYTHONPATH": "${workspaceRoot}"
+                },
+                "debugOptions": []
+            },
+            "breakpoints": {
+                "exception": {
+                    "caught": "N",
+                    "uncaught": "Y",
+                    "raised": "N",
+                    "userUnhandled": "Y"
+                }
+            }
+        },
+        "Debugger: Launch Moduel": {
+            "adapter": "debugpy",
+            "filetypes": [ "python" ],
+            "configuration": {
+                "name": "Launch Module",
+                "request": "launch",
+                "type": "python",
+                "stopOnEntry": true,
+                "python": "python3",
+                "module": "${input:Enter a module name}",
+                "env": {
+                    "PYTHONPATH": "${workspaceRoot}"
+                },
+                "console": "externalTerminal",
+                "debugOptions": []
+            },
+            "breakpoints": {
+                "exception": {
+                    "caught": "N",
+                    "uncaught": "Y",
+                    "raised": "N",
+                    "userUnhandled": "Y"
+                }
+            }
+        },
+        "Debugger - Run Test":{
+            "adapter": "debugpy",
+            "filetypes": [ "python" ],
+            "configuration": {
+                "name": "Run Test",
+                "request": "launch",
+                "protocol": "auto",
+                "stopOnEntry": true,
+                "console": "integratedTerminal",
+                "type": "python",
+                "module": "pytest",
+                "python": "python3",
+                "env": {
+                    "PYTHONPATH": "${workspaceRoot}"
+                },
+                "args": [
+                    "${file}"
+                ]
+            },
+            "breakpoints": {
+                "exception": {
+                    "raised": "N",
+                    "caught": "N",
+                    "uncaught": "Y",
+                    "userUnhandled": "N"
+                }
+            }
+        }
+    }
+}
